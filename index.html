@@ -1,28 +1,33 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="script" href="index.js">
     </head>
     <body>
-        <div>
-            <header>
-                <h1>Venue Entry Count</h1>
-            </header>
-            <section id="people-counter">
-                <h2>People entered:</h2>    
-                <h3 id="count-el">0</h3>
-            </section>
-            <section id="counter-buttons">
-                <button id="increment-btn" onclick="increment()">COUNT</button>
-                <button id="save-btn" onclick="save()">SAVE</button>
-                <button id="reset-btn" onclick="reset()">Reset</button>
-            </section>
-            <section id="saved-count"> 
-                <p>Previous Entries</p>
-                <p id="save-el"></p>
-            </section>
-            
-                    
-            <script src="index.js"></script>
+        <div class="container">
+            <h1>SCORE</h1>
+            <div class="score-container">
+                <div id="home">
+                    <h3>HOME</h3>
+                    <p id="score_home">0</p>
+                    <div class="buttons" id="home_btns">
+                        <button id="home_plus1" onclick="incrementHome1()">+1</button>
+                        <button id="home_plus2" onclick="incrementHome2()">+2</button>
+                        <button id="home_plus3" onclick="incrementHome3()">+3</button>
+                    </div>
+                </div>
+                <div id="guest">
+                    <h3>GUEST</h3>
+                    <p id="score_guest">0</p>
+                    <div class="buttons" id="guest_btns">
+                        <button id="guest_plus1" onclick="incrementGuest1()">+1</button>
+                        <button id="guest_plus2" onclick="incrementGuest2()">+2</button>
+                        <button id="guest_plus3" onclick="incrementGuest3()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <button id="new_game" onclick="newGame()">NEW GAME</button>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
