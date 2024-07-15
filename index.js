@@ -50,3 +50,4 @@ document.addEventListener("click", function updateScoreDisplay() {
         guestDisplay.style.color = "";
     }
 });
+console.log()
